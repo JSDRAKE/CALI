@@ -1,0 +1,737 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Algoritmica">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff003344"
+        android:id="@+id/lyTitulo">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Elementos de Lógica y Matemática Discreta"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:paddingTop="10dp" />
+
+    </LinearLayout>
+
+    <!--////////// Parciales //////////-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/svCronograma"
+        android:layout_below="@id/lyTitulo">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rlPrincipal">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lyEtiquetaPar"
+                android:layout_marginTop="20dp">
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Parciales "
+                    android:textAlignment="center"
+                    android:textSize="25sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_below="@id/lyEtiquetaPar"
+                android:layout_marginTop="20dp"
+                android:id="@+id/lyTitulosPar"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Parcial"
+                    android:textSize="20sp"
+                    android:textColor="#ff003344"
+                    android:layout_weight="0.25"
+                    android:gravity="center_vertical|center_horizontal" />
+
+
+                <TextView
+                    android:id="@+id/tvPracticos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Practicos"
+                    android:textColor="#ff003344"
+                    android:textSize="20sp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:layout_weight="0.25" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fecha"
+                    android:textSize="20sp"
+                    android:textColor="#ff003344"
+                    android:layout_weight="0.25"
+                    android:gravity="center_vertical|center_horizontal" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Recup"
+                    android:textSize="20sp"
+                    android:textColor="#ff003344"
+                    android:layout_weight="0.25"
+                    android:gravity="center_vertical|center_horizontal" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_below="@id/lyTitulosPar"
+                android:id="@+id/lyContenido1"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Primero"
+                    android:textSize="20sp"
+                    android:textColor="#ff003344"
+                    android:layout_weight="0.25"
+                    android:gravity="center_vertical|center_horizontal" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1 al 3"
+                    android:textColor="#ff003344"
+                    android:textSize="20sp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:layout_weight="0.25" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="11-sep"
+                    android:textColor="#ff003344"
+                    android:textSize="20sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="11-oct"
+                    android:textSize="20sp"
+                    android:textColor="#ff003344"
+                    android:layout_weight="0.25"
+                    android:gravity="center_vertical|center_horizontal"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_below="@id/lyContenido1"
+                android:id="@+id/lyContenido2"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Segundo"
+                    android:textSize="20sp"
+                    android:textColor="#ff003344"
+                    android:layout_weight="0.25"
+                    android:gravity="center_vertical|center_horizontal" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4 al 8"
+                    android:textColor="#ff003344"
+                    android:textSize="20sp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:layout_weight="0.25" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="8-nov"
+                    android:textColor="#ff003344"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="15-nov"
+                    android:textColor="#ff003344"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+
+            <!--///////// Promocion ////////-->
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lyEtiquetaPromo"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/lyContenido2">
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Promoción"
+                    android:textAlignment="center"
+                    android:textSize="25sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_below="@id/lyEtiquetaPromo"
+                android:layout_marginTop="20dp"
+                android:id="@+id/lyTitulosProm"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Parcial"
+                    android:textSize="20sp"
+                    android:textColor="#ff003344"
+                    android:layout_weight="0.25"
+                    android:gravity="center_vertical|center_horizontal" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Practicos"
+                    android:textColor="#ff003344"
+                    android:textSize="20sp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:layout_weight="0.25" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fecha"
+                    android:textSize="20sp"
+                    android:textColor="#ff003344"
+                    android:layout_weight="0.25"
+                    android:gravity="center_vertical|center_horizontal" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_below="@id/lyTitulosProm"
+                android:id="@+id/lyContenido3"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Primero"
+                    android:textSize="20sp"
+                    android:textColor="#ff003344"
+                    android:layout_weight="0.18"
+                    android:gravity="center_vertical|center_horizontal" />
+
+
+                <TextView
+                    android:layout_width="88dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="1 al 3"
+                    android:textColor="#ff003344"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="4-oct"
+                    android:textColor="#ff003344"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_below="@id/lyContenido3"
+                android:id="@+id/lyContenido4"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Segundo"
+                    android:textSize="20sp"
+                    android:textColor="#ff003344"
+                    android:layout_weight="0.25"
+                    android:gravity="center_vertical|center_horizontal" />
+
+
+                <TextView
+                    android:layout_width="88dp"
+                    android:layout_height="wrap_content"
+                    android:text="4 al 8"
+                    android:textColor="#ff003344"
+                    android:textSize="20sp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:layout_weight="0.25" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="22-nov"
+                    android:textSize="20sp"
+                    android:textColor="#ff003344"
+                    android:layout_weight="0.25"
+                    android:gravity="center_vertical|center_horizontal"/>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/RecupeFinal"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/lyContenido4">
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Recuperato Final"
+                    android:textAlignment="center"
+                    android:textSize="25sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lyRecupeFinal"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/RecupeFinal">
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="24 de Noviembre - Solo se recupera un parcial"
+                    android:textAlignment="center"
+                    android:textSize="25sp" />
+
+            </LinearLayout>
+
+
+            <!--////////// TP Obligatorios ////////-->
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lyEtiquetaTP"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/lyRecupeFinal">
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Parcialitos Virtuales"
+                    android:textAlignment="center"
+                    android:textSize="25sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="0.7"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_below="@id/lyEtiquetaTP"
+                android:id="@+id/lytituloTPV">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Parcialitos virtuales"
+                    android:textSize="20sp"
+                    android:textColor="#ff003344"
+                    android:gravity="center_vertical|center_horizontal" />
+
+
+                <TextView
+                    android:layout_width="88dp"
+                    android:layout_height="wrap_content"
+                    android:text="Fechas"
+                    android:textColor="#ff003344"
+                    android:textSize="20sp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:layout_weight="0.25" />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_below="@id/lytituloTPV"
+                android:id="@+id/lyContenido5">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TP N° 1 (Unidad 1)"
+                    android:textSize="20sp"
+                    android:textColor="#ff003344"
+                    android:layout_weight="0.18"
+                    android:gravity="center_vertical|center_horizontal" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="17/08 – 18/08"
+                    android:textColor="#ff003344"
+                    android:textSize="20sp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:layout_weight="0.25" />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_below="@id/lyContenido5"
+                android:id="@+id/lyContenido6"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TP N° 2 (Unidad 2)"
+                    android:textSize="20sp"
+                    android:textColor="#ff003344"
+                    android:layout_weight="0.25"
+                    android:gravity="center_vertical|center_horizontal" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="24/08 – 25/08"
+                    android:textColor="#ff003344"
+                    android:textSize="20sp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:layout_weight="0.25" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_below="@id/lyContenido6"
+                android:id="@+id/lyContenido7"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TP N° 3 (Unidad 3)"
+                    android:textSize="20sp"
+                    android:textColor="#ff003344"
+                    android:layout_weight="0.25"
+                    android:gravity="center_vertical|center_horizontal" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="06/09 – 07/09"
+                    android:textColor="#ff003344"
+                    android:textSize="20sp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:layout_weight="0.25" />
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_below="@id/lyContenido7"
+                android:id="@+id/lyContenido8"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TP N° 4 (Unidad 4)"
+                    android:textSize="20sp"
+                    android:textColor="#ff003344"
+                    android:layout_weight="0.25"
+                    android:gravity="center_vertical|center_horizontal" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="27/09 – 28/09"
+                    android:textColor="#ff003344"
+                    android:textSize="20sp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:layout_weight="0.25" />
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_below="@id/lyContenido8"
+                android:id="@+id/lyContenido9"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TP N° 5 (Unidad 5)"
+                    android:textSize="20sp"
+                    android:textColor="#ff003344"
+                    android:layout_weight="0.25"
+                    android:gravity="center_vertical|center_horizontal" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12/10 – 13/10"
+                    android:textColor="#ff003344"
+                    android:textSize="20sp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:layout_weight="0.25" />
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_below="@id/lyContenido9"
+                android:id="@+id/lyContenido10"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TP N° 6 (Unidad 6)"
+                    android:textSize="20sp"
+                    android:textColor="#ff003344"
+                    android:layout_weight="0.25"
+                    android:gravity="center_vertical|center_horizontal" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="18/10 – 19/10"
+                    android:textColor="#ff003344"
+                    android:textSize="20sp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:layout_weight="0.25" />
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_below="@id/lyContenido10"
+                android:id="@+id/lyContenido11"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TP N° 7 (Unidad 7)"
+                    android:textSize="20sp"
+                    android:textColor="#ff003344"
+                    android:layout_weight="0.25"
+                    android:gravity="center_vertical|center_horizontal" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="25/10 – 26/10"
+                    android:textColor="#ff003344"
+                    android:textSize="20sp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:layout_weight="0.25" />
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_below="@id/lyContenido11"
+                android:id="@+id/lyContenido12"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TP N° 8 (Unidad 8)"
+                    android:textSize="20sp"
+                    android:textColor="#ff003344"
+                    android:layout_weight="0.25"
+                    android:gravity="center_vertical|center_horizontal" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="31/10 – 01/11"
+                    android:textColor="#ff003344"
+                    android:textSize="20sp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:layout_weight="0.25" />
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_below="@id/lyContenido12"
+                android:id="@+id/lyContenido13"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TP N° 9 (Unidad 8)"
+                    android:textSize="20sp"
+                    android:textColor="#ff003344"
+                    android:layout_weight="0.25"
+                    android:gravity="center_vertical|center_horizontal" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="05/11 – 06/11"
+                    android:textColor="#ff003344"
+                    android:textSize="20sp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:layout_weight="0.25" />
+
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

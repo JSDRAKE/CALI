@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Algoritmica">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff003344"
+        android:id="@+id/lyTitulo">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Algoritmica y Programación I"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:paddingTop="10dp" />
+
+    </LinearLayout>
+
+    <!--////////// Parciales //////////-->
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/svCronograma"
+    android:layout_below="@id/lyTitulo">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rlPrincipal">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lyEtiquetaPar"
+        android:layout_marginTop="20dp">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Parciales "
+            android:textAlignment="center"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_below="@id/lyEtiquetaPar"
+        android:layout_marginTop="20dp"
+        android:id="@+id/lyTitulosPar"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Parcial"
+            android:textSize="20sp"
+            android:textColor="#ff003344"
+            android:layout_weight="0.25"
+            android:gravity="center_vertical|center_horizontal" />
+
+
+        <TextView
+            android:id="@+id/tvPracticos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Practicos"
+            android:textColor="#ff003344"
+            android:textSize="20sp"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_weight="0.25" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fecha"
+            android:textSize="20sp"
+            android:textColor="#ff003344"
+            android:layout_weight="0.25"
+            android:gravity="center_vertical|center_horizontal" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recup"
+            android:textSize="20sp"
+            android:textColor="#ff003344"
+            android:layout_weight="0.25"
+            android:gravity="center_vertical|center_horizontal" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_below="@id/lyTitulosPar"
+        android:id="@+id/lyContenido1"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Primero"
+            android:textSize="20sp"
+            android:textColor="#ff003344"
+            android:layout_weight="0.25"
+            android:gravity="center_vertical|center_horizontal" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 al 3"
+            android:textColor="#ff003344"
+            android:textSize="20sp"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_weight="0.25" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="04-oct"
+            android:textSize="20sp"
+            android:textColor="#ff003344"
+            android:layout_weight="0.25"
+            android:gravity="center_vertical|center_horizontal"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="17-oct"
+            android:textSize="20sp"
+            android:textColor="#ff003344"
+            android:layout_weight="0.25"
+            android:gravity="center_vertical|center_horizontal"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_below="@id/lyContenido1"
+        android:id="@+id/lyContenido2"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Segundo"
+            android:textSize="20sp"
+            android:textColor="#ff003344"
+            android:layout_weight="0.25"
+            android:gravity="center_vertical|center_horizontal" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4 al 8"
+            android:textColor="#ff003344"
+            android:textSize="20sp"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_weight="0.25" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="17-nov"
+            android:textSize="20sp"
+            android:textColor="#ff003344"
+            android:layout_weight="0.25"
+            android:gravity="center_vertical|center_horizontal"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="22-nov"
+            android:textSize="20sp"
+            android:textColor="#ff003344"
+            android:layout_weight="0.25"
+            android:gravity="center_vertical|center_horizontal"/>
+
+
+    </LinearLayout>
+
+    <!--///////// Promocion ////////-->
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lyEtiquetaPromo"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/lyContenido2">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Promoción"
+            android:textAlignment="center"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_below="@id/lyEtiquetaPromo"
+        android:layout_marginTop="20dp"
+        android:id="@+id/lyTitulosProm"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Parcial"
+            android:textSize="20sp"
+            android:textColor="#ff003344"
+            android:layout_weight="0.25"
+            android:gravity="center_vertical|center_horizontal" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Practicos"
+            android:textColor="#ff003344"
+            android:textSize="20sp"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_weight="0.25" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fecha"
+            android:textSize="20sp"
+            android:textColor="#ff003344"
+            android:layout_weight="0.25"
+            android:gravity="center_vertical|center_horizontal" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_below="@id/lyTitulosProm"
+        android:id="@+id/lyContenido3"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Primero"
+            android:textSize="20sp"
+            android:textColor="#ff003344"
+            android:layout_weight="0.18"
+            android:gravity="center_vertical|center_horizontal" />
+
+
+        <TextView
+            android:layout_width="88dp"
+            android:layout_height="wrap_content"
+            android:text="1 al 3 inclusive hasta la clase del 3/06"
+            android:textColor="#ff003344"
+            android:textSize="20sp"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_weight="0.25" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="17-oct"
+            android:textSize="20sp"
+            android:textColor="#ff003344"
+            android:layout_weight="0.25"
+            android:gravity="center_vertical|center_horizontal"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_below="@id/lyContenido3"
+        android:id="@+id/lyContenido4"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Segundo"
+            android:textSize="20sp"
+            android:textColor="#ff003344"
+            android:layout_weight="0.25"
+            android:gravity="center_vertical|center_horizontal" />
+
+
+        <TextView
+            android:layout_width="88dp"
+            android:layout_height="wrap_content"
+            android:text="hasta clase del 05/11 inclusive"
+            android:textColor="#ff003344"
+            android:textSize="20sp"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_weight="0.25" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="22-nov"
+            android:textSize="20sp"
+            android:textColor="#ff003344"
+            android:layout_weight="0.25"
+            android:gravity="center_vertical|center_horizontal"/>
+
+
+
+    </LinearLayout>
+
+    <!--////////// TP Obligatorios ////////-->
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lyEtiquetaTP"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/lyContenido4">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Trabajos Practicos Obligatorios"
+            android:textAlignment="center"
+            android:textSize="25sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_below="@id/lyEtiquetaTP"
+        android:id="@+id/lyContenido5"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Práctico 3"
+            android:textSize="20sp"
+            android:textColor="#ff003344"
+            android:layout_weight="0.18"
+            android:gravity="center_vertical|center_horizontal" />
+
+
+        <TextView
+            android:layout_width="88dp"
+            android:layout_height="wrap_content"
+            android:text="02-oct"
+            android:textColor="#ff003344"
+            android:textSize="20sp"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_weight="0.25" />
+
+        <TextView
+            android:layout_width="88dp"
+            android:layout_height="wrap_content"
+            android:text="Requisito paraPrimer Parcial"
+            android:textSize="20sp"
+            android:textColor="#ff003344"
+            android:layout_weight="0.25"
+            android:gravity="center_vertical|center_horizontal"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_below="@id/lyContenido5"
+        android:id="@+id/lyContenido6"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Practico 6"
+            android:textSize="20sp"
+            android:textColor="#ff003344"
+            android:layout_weight="0.25"
+            android:gravity="center_vertical|center_horizontal" />
+
+
+        <TextView
+            android:layout_width="88dp"
+            android:layout_height="wrap_content"
+            android:text="6-nov"
+            android:textColor="#ff003344"
+            android:textSize="20sp"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_weight="0.25" />
+
+        <TextView
+            android:layout_width="88dp"
+            android:layout_height="wrap_content"
+            android:text="Requisito para Segundo Parcial"
+            android:textSize="20sp"
+            android:textColor="#ff003344"
+            android:layout_weight="0.25"
+            android:gravity="center_vertical|center_horizontal"/>
+
+
+
+    </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_below="@id/lyContenido6"
+            android:id="@+id/lyContenido7"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Practico "
+                android:textSize="20sp"
+                android:textColor="#ff003344"
+                android:layout_weight="0.25"
+                android:gravity="center_vertical|center_horizontal" />
+
+
+            <TextView
+                android:layout_width="88dp"
+                android:layout_height="wrap_content"
+                android:text="23-nov"
+                android:textColor="#ff003344"
+                android:textSize="20sp"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_weight="0.25" />
+
+            <TextView
+                android:layout_width="88dp"
+                android:layout_height="wrap_content"
+                android:text="Requisito para Segundo Parcial"
+                android:textSize="20sp"
+                android:textColor="#ff003344"
+                android:layout_weight="0.25"
+                android:gravity="center_vertical|center_horizontal"/>
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>
+
+</RelativeLayout>

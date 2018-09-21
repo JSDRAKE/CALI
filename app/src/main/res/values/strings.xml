@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Calendario de APU y Lic. en Informática</string>
+    <string name="logica">Logica</string>
+    <string name="regresar">Regresar</string>
+    <string name="analisis">Analisis</string>
+    <string name="algoritmica">Algoritmica</string>
+</resources>
