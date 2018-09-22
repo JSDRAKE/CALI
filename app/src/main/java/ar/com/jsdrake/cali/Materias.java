@@ -37,4 +37,9 @@ public class Materias extends AppCompatActivity {
 
     }
 
+    public void Horarios(View view){
+        Intent Horarios = new Intent(this, Horarios.class);
+        startActivity(Horarios);
+    }
+
 }

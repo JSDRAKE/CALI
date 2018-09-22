@@ -19,7 +19,8 @@
         <activity android:name=".Materias" />
         <activity android:name=".Algoritmica" />
         <activity android:name=".Analisis" />
-        <activity android:name=".Logica"></activity>
+        <activity android:name=".Logica" />
+        <activity android:name=".Horarios"></activity>
     </application>
 
 </manifest>
