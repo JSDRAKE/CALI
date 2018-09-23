@@ -3,6 +3,7 @@ package ar.com.jsdrake.cali;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Menu;
 import android.view.View;
 
 public class Materias extends AppCompatActivity {
@@ -42,4 +43,12 @@ public class Materias extends AppCompatActivity {
         startActivity(Horarios);
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
 }
+
+
