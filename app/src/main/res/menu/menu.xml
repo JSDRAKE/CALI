@@ -3,7 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:id="@+id/Update"
+        android:id="@+id/update"
         android:title="Actualizar"
         app:showAsAction="never"/>
+    <item
+        android:id="@+id/info"
+        android:title="Información"
+        app:showAsAction="never"/>
+
+
 </menu>

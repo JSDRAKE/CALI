@@ -20,7 +20,8 @@
         <activity android:name=".Algoritmica" />
         <activity android:name=".Analisis" />
         <activity android:name=".Logica" />
-        <activity android:name=".Horarios"></activity>
+        <activity android:name=".Horarios" />
+        <activity android:name=".Informacion"></activity>
     </application>
 
 </manifest>
