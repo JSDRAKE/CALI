@@ -58,11 +58,12 @@ public class MyReceiver extends BroadcastReceiver {
 
                     System.out.print(file);
 
-                    Intent pantallaInstall=new Intent(Intent.ACTION_VIEW);
-                    pantallaInstall.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                    pantallaInstall.setDataAndType(Uri.parse(uriString),"application/vnd.android.package-archive");
-                    my_activity.startActivity(pantallaInstall);
 
+
+                    Intent promtInstall=new Intent(Intent.ACTION_VIEW);
+                    promtInstall.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    promtInstall.setDataAndType(Uri.parse(uriString),"application/vnd.android.package-archive");
+                    my_activity.startActivity(promtInstall);
                     Log.e("MsjDescarga","Se descargo sin problemas");
 
                 }
@@ -93,9 +94,9 @@ public class MyReceiver extends BroadcastReceiver {
         }
 
 
-        my_Request.setDestinationInExternalPublicDir("/apk",name);
+        my_Request.setDestinationInExternalPublicDir("/apk", name);
 
-        String h=my_Request.setDestinationInExternalPublicDir("/apk",name).toString();
+        String h=my_Request.setDestinationInExternalPublicDir("/apk", name).toString();
 
         Log.e("ruta_apk",h);
 

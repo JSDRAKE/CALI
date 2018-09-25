@@ -19,7 +19,9 @@ import android.widget.TextView;
 
 public class Materias extends AppCompatActivity {
 
-    String version_actual="1.0.0";
+    /*////////// Declaración de version de APP //////////*/
+
+    String version_actual="1.1.0";
     String version_firebase;
     String url_firebase;
 
@@ -79,7 +81,7 @@ public class Materias extends AppCompatActivity {
                         public void onClick(DialogInterface dialog, int which) {
                             Intent Actualizar = new Intent(Materias.this, PantallaActualizar.class);
                             Actualizar.putExtra("version",version_firebase);
-                            //Actualizar.putExtra("url",url_firebase);
+                            Actualizar.putExtra("url",url_firebase);
                             finish();
                             startActivity(Actualizar);
                         }
@@ -95,13 +97,6 @@ public class Materias extends AppCompatActivity {
 
                     ventana.show();
 
-
-/*
-                    Intent pantaActualizar=new Intent(getApplicationContext(),PantallaActualizar.class);
-                    pantaActualizar.putExtra("version",version_firebase);
-                    pantaActualizar.putExtra("url",url_firebase);
-                    finish();
-                    startActivity(pantaActualizar);*/
                 }
 
 
@@ -113,24 +108,12 @@ public class Materias extends AppCompatActivity {
             }
         });
 
-
-
-
-
-
-
     }
 
 
 
-    /*////////// Ingreso a Materias //////////*/
+    /*////////// Ingreso a las Materias //////////*/
 
-
-    public void Regresar(View view) {
-        Intent Regresar = new Intent(this, MainActivity.class);
-        startActivity(Regresar);
-
-    }
 
     public void Algoritmica(View view) {
         Intent Algoritmica = new Intent(this, Algoritmica.class);
@@ -154,6 +137,8 @@ public class Materias extends AppCompatActivity {
         startActivity(Horarios);
     }
 
+    /*////////// Intent de Opciones Menu /////////*/
+
     public void Informacion(View view){
         Intent Informacion = new Intent(this, Informacion.class);
         startActivity(Informacion);
@@ -161,7 +146,7 @@ public class Materias extends AppCompatActivity {
     }
 
     public void Actualizar(View view){
-        Intent Actualizar = new Intent(this, PantallaActualizar.class);
+        Intent Actualizar = new Intent(this, BuscarActualizacion.class);
         startActivity(Actualizar);
 
     }

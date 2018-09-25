@@ -2,6 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="ar.com.jsdrake.cali">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -22,7 +27,8 @@
         <activity android:name=".Logica" />
         <activity android:name=".Horarios" />
         <activity android:name=".Informacion" />
-        <activity android:name=".PantallaActualizar"></activity>
+        <activity android:name=".PantallaActualizar" />
+        <activity android:name=".BuscarActualizacion"></activity>
     </application>
 
 </manifest>
