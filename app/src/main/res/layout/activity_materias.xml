@@ -7,6 +7,16 @@
     android:layout_height="match_parent"
     tools:context=".Materias">
 
+    <TextView
+        android:id="@+id/txt_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="14dp"
+        android:text="Version 1.0.0"
+        android:textColor="#fff" />
 
     <LinearLayout
         android:orientation="horizontal"

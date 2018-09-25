@@ -21,7 +21,8 @@
         <activity android:name=".Analisis" />
         <activity android:name=".Logica" />
         <activity android:name=".Horarios" />
-        <activity android:name=".Informacion"></activity>
+        <activity android:name=".Informacion" />
+        <activity android:name=".PantallaActualizar"></activity>
     </application>
 
 </manifest>

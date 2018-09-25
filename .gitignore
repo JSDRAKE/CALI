@@ -35,3 +35,12 @@ local.properties
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+#google services
+app/google-services.json
+
+#Debug
+app/rebug/
+
+#Release
+app/release/
